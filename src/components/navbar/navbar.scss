@@ -1,0 +1,20 @@
+.navbar {
+    display: grid;
+    display: -ms-grid;
+    grid-column: 2 / 3;
+    background-color: white;
+    justify-content: center;
+
+    ul {
+        line-height: 40px;
+
+        li {
+            text-decoration: none;
+            color: grey;
+
+            &:hover {
+                border-bottom: 1px solid black
+            }
+        }
+    }
+}

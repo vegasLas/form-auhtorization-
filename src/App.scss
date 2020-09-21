@@ -1,0 +1,23 @@
+.wrapper {
+  min-height: 100%;
+  background-color: white;
+  display: grid;
+  display: -ms-grid;
+  grid-template: minmax(110px, auto) 1fr / 1fr;
+  grid-template-areas:
+    "h"
+    "b";
+
+  &__body {
+    grid-area: b;
+    grid-row: 2 / 3;
+    display: grid;
+    display: -ms-grid;
+    grid-template: 1fr / 1fr minmax(auto, 200px) minmax(auto, 800px) 1fr;
+  }
+
+  &__content {
+    display: grid;
+    grid-column: 3 / 4;
+  }
+}

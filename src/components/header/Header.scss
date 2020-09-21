@@ -1,0 +1,33 @@
+.header {
+    background-color: rgb(209, 202, 202);
+    display: grid;
+    display: -ms-grid;
+    grid-area: h;
+    grid-template: 1fr / 1fr minmax(200px, auto) minmax(800px, auto) 1fr;
+
+    img {
+        width: 100px;
+        height: 100px;
+        display: grid;
+        grid-column: 2 / 3;
+        margin: 0 auto
+    }
+
+    ul {
+        display: flex;
+        display: -ms-grid;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+            color: white;
+            padding: 0 10px;
+            &:last-child {
+                padding-right: 0px;
+            }
+            &:hover {
+                border-radius: 1px solid black;
+            }
+        }
+    }
+}

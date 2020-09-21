@@ -1,0 +1,50 @@
+.user {
+    display: grid;
+    grid-template: minmax(80px, auto) 1fr / 1fr;
+
+    &__header {
+        background-color: black;
+        display: grid;
+        display: -ms-grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 200px 800px 1fr;
+
+        img {
+            width: 100px;
+            height: 100px;
+            grid-column: 2 / 3;
+            margin: 0 auto;
+        }
+
+        ul {
+            display: grid;
+            align-items: center;
+            justify-content: end;
+        }
+
+    }
+
+
+
+    &__information {
+        background-color: white;
+        display: grid;
+        grid-column: 2 / 3;
+        grid-template-columns: 1000px;
+        grid-template-rows: 1fr;
+    }
+}
+
+.information {
+    &__content {
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    img {
+        margin: 0 auto;
+        width: 130px;
+        height: 120px;
+        border-radius: 50%;
+    }
+}
